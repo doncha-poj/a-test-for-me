@@ -1,0 +1,37 @@
+﻿@model Fall2025_Final_Humbuckers.Models.ViewModels.AdminReportViewModel
+
+@{
+    ViewData["Title"] = "Admin Metrics";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Metrics Dashboard</h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Total Users</div>
+                <div class="card-body">
+                    <h1 class="card-title display-4">@Model.TotalUsers</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Top Artist</div> <div class="card-body">
+                    <h1 class="card-title display-4">@Model.TopArtist</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header">Total Favorites</div>
+                <div class="card-body">
+                    <h1 class="card-title display-4">@Model.TotalFavoriteTracks</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

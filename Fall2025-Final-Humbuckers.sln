@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fall2025-Final-Humbuckers", "Fall2025-Final-Humbuckers\Fall2025-Final-Humbuckers.csproj", "{055E0C0B-4658-442D-AC90-B1E513CCDDDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055E0C0B-4658-442D-AC90-B1E513CCDDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055E0C0B-4658-442D-AC90-B1E513CCDDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055E0C0B-4658-442D-AC90-B1E513CCDDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055E0C0B-4658-442D-AC90-B1E513CCDDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB223EB0-B910-444D-A661-910FA9E26DA5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/*custom
+*/
+.hero-section {
+    background: linear-gradient(135deg, #258cfb 0%, #9dd8a4 100%);
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.hero-section h1 {
+    color: #1a3d0a;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.hero-section p {
+    color: #2d5016;
+}
+
+.recommendation-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e9 100%);
+}
+
+.recommendation-highlight {
+    background: white;
+    border-left: 5px solid #e5b44d;
+}
+
+    .recommendation-highlight h4 {
+        color: #1a3d0a;
+        font-size: 1.5rem;
+    }
+
+.action-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .action-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    }
+
+.action-icon {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #258cfb 0%, #9dd8a4 100%);
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
