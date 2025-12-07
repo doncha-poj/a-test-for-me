@@ -73,7 +73,7 @@ namespace Fall2025_Final_Humbuckers.Controllers
         public async Task<IActionResult> AddToFavorites(
             string title, string artist, string album, string spotifyUrl, string albumArtUrl, string spotifyId)
         {
-            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(artist) || string.IsNullOrEmpty(spotifyId))
+            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(artist))// || string.IsNullOrEmpty(spotifyId))
                 return BadRequest();
 
             var user = await _userManager.GetUserAsync(User);

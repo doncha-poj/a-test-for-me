@@ -25,7 +25,7 @@ namespace Fall2025_Final_Humbuckers.Models
         [StringLength(500)]
         public string SpotifyUrl { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string SpotifyId { get; set; }
 
         [StringLength(500)]

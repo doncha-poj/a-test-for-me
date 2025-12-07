@@ -62,7 +62,8 @@ namespace Fall2025_Final_Humbuckers.Controllers
 
             ModelState.Remove("UserId");
             ModelState.Remove("User");
-            ModelState.Remove("DateAdded");
+            ModelState.Remove("CreatedAt");
+            ModelState.Remove("GlobalTrackId");
 
             // Check if chosen song is already in favorites
             var existingFavorite = await _context.FavoriteTracks.FirstOrDefaultAsync(
@@ -111,7 +112,11 @@ namespace Fall2025_Final_Humbuckers.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            TempData["Message"] = $"Error adding favorite. Please try again.";
+            var errorMessages = ModelState.Values
+                .SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage);
+
+            TempData["Message"] = $"Error adding favorite: {string.Join(" | ", errorMessages)}";
             TempData["MessageType"] = "danger";
             return RedirectToAction(nameof(Create));
         }
